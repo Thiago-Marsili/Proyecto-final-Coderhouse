@@ -1,0 +1,20 @@
+/*INDEX*/
+.main__index{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    &--container{
+       width: 75vw;
+       max-width: 1000px;
+       min-width: 320px;
+       margin: auto;
+    }
+    .messi img{
+        width: 100%;
+    }
+    .video{
+        padding-bottom: 20px;
+    }
+}

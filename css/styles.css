@@ -1,0 +1,267 @@
+/*RESETEO*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /*BODY*/
+  body {
+    position: relative;
+  }
+  
+  /*HEADER*/
+  .color {
+    background-color: #2E8AE6;
+  }
+  
+  .header__logocontenedor--img {
+    width: 100px;
+  }
+  
+  .p-0 {
+    margin-top: 0px;
+  }
+  
+  .navbar {
+    --bs-navbar-padding-y: 0rem;
+  }
+  
+  /*FOOTER*/
+  .footer {
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding: 2rem 8%;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .footer--logo {
+    height: 80px;
+    margin-bottom: 1rem;
+  }
+  .footer--social-icons-container, .footer--menu-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+  }
+  .footer--social-icon {
+    border-radius: 100px;
+    margin: 1rem;
+  }
+  .footer--social-icon .social-icon:hover {
+    background-color: #121212;
+    filter: invert(1);
+  }
+  .footer--menu-container {
+    list-style-type: none;
+    color: #f2f2f2;
+    font-size: 18px;
+  }
+  .footer--menu-item {
+    margin: 1rem 1.5rem;
+    color: white;
+    cursor: pointer;
+    opacity: 0.6;
+    text-decoration: none;
+  }
+  .footer--menu-item .menu-item:hover {
+    opacity: 1;
+  }
+  .footer--copyright {
+    color: #f2f2f2;
+    opacity: 0.3;
+    text-align: center;
+  }
+  
+  /*INDEX*/
+  .main__index--titulo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;  }
+  .main__index--container {
+    width: 75vw;
+    max-width: 1000px;
+    min-width: 320px;
+    margin: auto;
+  }
+  .main__index .messi img {
+    width: 100%;
+  }
+  .main__index .video {
+    padding-bottom: 20px;
+  }
+  
+  .main__titulos h1 {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .main__trofeos {
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+  }
+  
+  /*BIOGRAFIA*/
+  .main__bio {
+    display: grid;
+    grid-template-columns: 500px 700px;
+    grid-template-rows: 1fr;
+    grid-template-areas: "img  texto";
+  }
+  .main__bio--img {
+    width: 100%;
+  }
+  .main__bio--container {
+    max-width: 700px;
+    width: 100%;
+    padding: 45px 20px;
+    margin: 0 auto;
+    margin-top: 150px;
+    color: black;
+  }
+  .main__bio--titulo {
+    font-size: 2rem;
+  }
+  .main__bio--parrafo {
+    font-size: 1rem;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .main__bio {
+      display: grid;
+      grid-template-columns: 500px;
+      grid-template-rows: 300pxfr 300pxfr;
+      grid-template-areas: "texto" "img";
+    }
+    .main__bio--parrafo {
+      font-size: 12px;
+    }
+    .main__bio--img {
+      grid-area: img;
+    }
+    .main__bio--parrafo {
+      grid-area: texto;
+    }
+  }
+  /*GALERIA*/
+  .main__galeria__texto h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main__galeria .card {
+    border: 0px;
+    padding: 10px;
+  }
+  .main__galeria .contenedor--galeria {
+    padding-bottom: 30px;
+  }
+  
+  /*CONTACTO*/
+  .main__form--formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+  }
+  .main__form--h1 {
+    display: flex;
+    justify-content: center;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .logo {
+    text-align: center;
+    font-size: 3em;
+  }
+  
+  .logo span {
+    color: #B70E21;
+  }
+  
+  .contact-wrapper {
+    box-shadow: 0 0 20px 0 black;
+  }
+  
+  .contact-wrapper > * {
+    padding: 1em;
+  }
+  
+  .contact-form {
+    background: white;
+  }
+  
+  .contact-form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .contact-form form label {
+    display: block;
+  }
+  
+  .contact-form form p {
+    margin: 0;
+    padding: 1em;
+  }
+  
+  .contact-form form .block {
+    grid-column: 1/3;
+  }
+  
+  .contact-form form button,
+  .contact-form form input,
+  .contact-form form textarea {
+    width: 100%;
+    padding: 0.7em;
+    border: none;
+    background: none;
+    outline: 0;
+    color: #fff;
+    border-bottom: 1px solid #d63031;
+  }
+  
+  .contact-form form button {
+    background: #B70E21;
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em;
+  }
+  
+  .contact-form form button:hover,
+  .contact-form form button:focus {
+    background: #d63031;
+    color: #fff;
+    transition: background-color 1s ease-out;
+    outline: 0;
+  }
+  
+  /* LARGE SIZE */
+  @media (min-width: 700px) {
+    .contact-wrapper {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+    }
+    .contact-wrapper > * {
+      padding: 2em;
+    }
+    .contact-info h4,
+    .contact-info ul,
+    .contact-info p {
+      text-align: left;
+    }
+  }/*# sourceMappingURL=origen.css.map */

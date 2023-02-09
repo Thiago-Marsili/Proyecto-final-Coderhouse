@@ -1,0 +1,17 @@
+/*Titulos*/
+.main__titulos h1{
+    display: flex;
+    justify-content: center;
+}
+.main__trofeos{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+@media (max-width: 1024px){
+    .main__trofeos{
+        height: 400px;
+        width: 400px;
+        padding: 10px;
+    }
+}

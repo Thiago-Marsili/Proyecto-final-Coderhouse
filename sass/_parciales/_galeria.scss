@@ -1,0 +1,15 @@
+/*GALERIA*/
+.main__galeria{
+    &__texto h1{
+        display:flex ;
+        justify-content: center;
+        align-items: center;
+    }
+    .card{
+        border: 0px;
+        padding: 10px;
+    }
+    .contenedor--galeria{
+        padding-bottom: 30px;
+    }
+}
